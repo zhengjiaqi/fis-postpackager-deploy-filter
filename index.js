@@ -1,4 +1,7 @@
 module.exports = function(ret, conf, settings, opt) {
+  if(opt.dest == 'preview'){
+    return;
+  }
   fis.util.map(ret.src, function(subpath, file) {
     var fileId = file.getId();
     var include = settings.include;
