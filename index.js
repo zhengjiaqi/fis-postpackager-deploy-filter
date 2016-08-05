@@ -30,7 +30,7 @@ module.exports = function(ret, conf, settings, opt) {
   });
 
   fis.util.map(ret.src, function(subpath, file) {
-    if (dependence.indexOf(file.getId()) < 0) {
+    if (dependence.indexOf(file.getId()) < 0 && (file.isHtmlLike || file.isJsLike || file.isCssLike)) {
       file.requires = [];
       file.release = false;
     }
