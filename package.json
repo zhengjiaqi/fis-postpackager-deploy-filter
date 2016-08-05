@@ -1,6 +1,6 @@
 {
   "name": "fis-postpackager-deploy-filter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Deploy Filter",
   "main": "index.js",
   "scripts": {
